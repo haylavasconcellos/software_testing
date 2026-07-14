@@ -1,18 +1,18 @@
 # Software Testing Suite: Open Hospital - Vaccine Browser
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 Este repositório contém o desenvolvimento e a análise de uma suíte de testes de software aplicada à funcionalidade **Vaccine Browser** do [Open Hospital](https://www.openhospital.org/), uma aplicação gratuita e *open-source* projetada para gestão hospitalar. 
 
 O projeto explora a eficácia de diferentes métodos de teste na verificação e validação de sistemas complexos. O foco dos testes foi garantir o bom funcionamento do gerenciamento de vacinas (adição, edição, exclusão e listagem) e o correto tratamento de exceções da aplicação.
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 O arquivo principal que contém a suíte de testes unitários e de interface desenvolvida para este projeto está localizado no seguinte caminho dentro do repositório:
 
 ```text
 software_testing/openhospital-core-1.11.5/src/test/java/org/isf/vacmanager/test/VaccineBrowserManagerTest.java
 ```
 
-## 🧪 Metodologias de Teste Aplicadas
+## Metodologias de Teste Aplicadas
 
 Para garantir uma validação rigorosa e abrangente, o projeto foi dividido em três abordagens principais:
 
@@ -39,14 +39,14 @@ Exploração de caminhos no código para geração automática de cenários de e
 * **Modelagem:** GraphWalker
 * **Geração Automática:** EvoSuite
 
-## 📊 Resultados e Conclusão
+## Resultados e Conclusão
 A análise comparativa demonstrou que os **testes de interface, aprimorados por simulação (*mocks*) e reflexão, emergiram como a ferramenta mais eficaz**. Esta abordagem atingiu uma cobertura completa (100%) da classe `VaccineBrowserManager` e um escore de mutação de 61%. 
 
 Em contrapartida, os testes gerados automaticamente pelo EvoSuite, embora tenham alcançado alta cobertura de linhas em alguns pacotes, não foram capazes de matar os mutantes injetados pelo PIT, revelando-se insuficientes para validar as condições específicas das exceções lançadas pelo sistema.
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 Como este projeto utiliza o ecossistema Java com JUnit 5, você precisará ter o **JDK** (Java Development Kit) e o **Maven** instalados em sua máquina.
 
